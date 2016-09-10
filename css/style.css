@@ -1,4 +1,28 @@
 
-#bcit-image {
-width: 300px;
+.bcit-image {
+  width: 300px;
+}
+
+.list-header {
+  color: #686a6e;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.links .col-sm-3 {
+  margin-top: 20px;
+}
+
+.header-divider {
+    width: 250px;
+}
+
+.divider {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  width: 50px;
+}
+
+.margin-60 {
+  margin-top: 60px;
 }
