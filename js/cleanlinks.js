@@ -1,11 +1,11 @@
 $(document).ready(function(){
   $("a").attr('target' ,'_blank');
-  
+
 	var nm;
 	var d = new Date();
 	var n = d.getHours();
 
-		if(n > 18){
+		if(n > 18 || n < 7){
 			nm = 1;
 			$(".nightmode").css("color", "#d9d9d9");
 			$(".nightmode").css("font-style", "italic");
@@ -28,7 +28,7 @@ $(document).ready(function(){
 			$("body").css("backgroundColor","white");
 		}
   $(".nightmode").click(function(){
-	
+
 	    if(nm === 0){
 			nm = 1;
 			$(".nightmode").css("color", "#d9d9d9");
