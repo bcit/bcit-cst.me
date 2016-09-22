@@ -15,6 +15,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(90%)");
 			$("img").css("-webkit-filter","invert(90%)");
 			$("body").css("backgroundColor","#1a1a1a");
+      $(".nightmode").html("Day Theme ");
+      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
 		}
 		else{
 			nm = 0;
@@ -26,6 +28,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(0%)");
 			$("img").css("-webkit-filter","invert(0%)");
 			$("body").css("backgroundColor","white");
+      $(".nightmode").html("Night Theme ");
+      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");
 		}
   $(".nightmode").click(function(){
 
@@ -39,6 +43,9 @@ $(document).ready(function(){
 			$("img").css("filter","invert(90%)");
 			$("img").css("-webkit-filter","invert(90%)");
 			$("body").css("backgroundColor","#1a1a1a");
+      $("a").css("color","#fff");
+      $(".nightmode").html("Day Theme ");
+      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
 		}
 		else{
 			nm = 0;
@@ -50,6 +57,9 @@ $(document).ready(function(){
 			$("img").css("filter","invert(0%)");
 			$("img").css("-webkit-filter","invert(0%)");
 			$("body").css("backgroundColor","white");
+      $("a").css("color","#337ab7");
+      $(".nightmode").html("Night Theme ");
+      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");s
 		}
   });
 

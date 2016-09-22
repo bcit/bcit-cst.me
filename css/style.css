@@ -1,4 +1,19 @@
 
+strike {
+  color: #ced6db;
+  cursor: no-drop;
+}
+
+.ss-icon {
+  position: relative;
+  top: 2px;
+  left: 2px;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
 .bcit-image {
   width: 300px;
 }
@@ -36,7 +51,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  width: 75px;
+  width: 130px;
   z-index: 10;
   position: fixed;
   left: 0;
