@@ -1,4 +1,8 @@
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 strike {
   color: #ced6db;
   cursor: no-drop;
