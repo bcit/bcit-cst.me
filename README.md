@@ -1,6 +1,6 @@
 # bcit-cst.me
 
-This repository hosts the information website for the BCIT CST programs 2016 fall entry.
+This repository hosts the info website for the BCIT CST programs 2016 fall entry.
 
 --------
 
