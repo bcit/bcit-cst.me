@@ -4,7 +4,7 @@ $(document).ready(function(){
 	var nm;
 	var d = new Date();
 	var n = d.getHours();
-	var secs= 100; //Change this to change to speed of div aprearing.
+	var secs= 25; //Change this to change to speed of div aprearing.
 
 	$("body").hide().fadeIn("slow");
 	$("#1").hide().fadeIn("slow");
@@ -32,8 +32,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(90%)");
 			$("img").css("-webkit-filter","invert(90%)");
 			$("body").css("backgroundColor","#1a1a1a");
-      $(".nightmode").html("Day Theme ");
-      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
+			$(".nightmode").html("Day Theme ");
+			$(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
 		}
 		else{
 			nm = 0;
@@ -45,8 +45,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(0%)");
 			$("img").css("-webkit-filter","invert(0%)");
 			$("body").css("backgroundColor","white");
-      $(".nightmode").html("Night Theme ");
-      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");
+			$(".nightmode").html("Night Theme ");
+			$(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");
 		}
   $(".nightmode").click(function(){
 
@@ -60,9 +60,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(90%)");
 			$("img").css("-webkit-filter","invert(90%)");
 			$("body").css("backgroundColor","#1a1a1a");
-      $("a").css("color","#fff");
-      $(".nightmode").html("Day Theme ");
-      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
+			$(".nightmode").html("Day Theme ");
+			$(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>sun</span>");
 		}
 		else{
 			nm = 0;
@@ -74,9 +73,8 @@ $(document).ready(function(){
 			$("img").css("filter","invert(0%)");
 			$("img").css("-webkit-filter","invert(0%)");
 			$("body").css("backgroundColor","white");
-      $("a").css("color","#337ab7");
-      $(".nightmode").html("Night Theme ");
-      $(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");s
+			$(".nightmode").html("Night Theme ");
+			$(".nightmode").append("<span style='position: relative; top: 2px; left: 2px;' class='ss-icon'>cloud</span>");s
 		}
   });
 
