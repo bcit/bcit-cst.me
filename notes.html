@@ -16,6 +16,25 @@
 </head>
 
 <body>
+
+    <div id="prompt">
+
+      <div class="container">
+        <div class="col-md-8 col-md-offset-2">
+
+          <form>
+            <div class="form-group" id="mydiv">
+              <label for="input1">Password Required</label>
+              <input type="text" class="form-control" id="input1" aria-describedby="emailHelp" placeholder="Enter Password">
+              <small id="emailHelp" class="form-text text-muted">These notes are only accessible to CST students.</small>
+            </div>
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
     <!-- NightMode -->
     <div class="nightmode"><i><p>Night Theme <span class="ss-icon">cloud</span></p></i></div>
     <div class="container links margin-60">
@@ -26,8 +45,6 @@
                 <h1>BCIT CST 2016 Fall Intake</h1>
                 <p class="lead">Notes and activities from classes<br><small><i>Open source on <a href="http://goo.gl/31ux0U">GitHub</a></i></small></p>
                 <hr class="header-divider">
-
-
 
                 <div class="row">
 
@@ -54,6 +71,7 @@
                             <li><a href="/docs/28_02_2017_notes.pdf">Lecture Notes 28/02/2017</a></li>
                             <li><a href="/docs/02_03_2017_notes.pdf">Lecture Notes 02/03/2017</a></li>
                             <li><a href="/docs/07_03_2017_notes.pdf">Lecture Notes 07/03/2017</a></li>
+                            <li><a href="/docs/09_03_2017_notes.pdf">Lecture Notes 09/03/2017</a></li>
                         </ul>
                     </div>
 
@@ -117,6 +135,34 @@
         ga('create', 'UA-57546802-3', 'auto');
         ga('send', 'pageview');
     </script>
+
+    <script type="text/javascript">
+    $('#input1').on('keyup', function() {
+     if (this.value.length > 1) {
+       if (this.value == "isitclear?") {
+         $('#prompt').fadeOut();
+       }
+     }
+    });
+    </script>
+    <style media="screen">
+    #prompt {
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100; /* Just to keep it at the very top */
+    }
+
+    #mydiv {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    </style>
 </body>
 
 </html>
